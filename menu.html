@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-en="Menu — Italissimo">Ēdienkarte — Italissimo</title>
+  <meta name="description" content="Italissimo ēdienkarte: antipasti, Neapoles pica, svaiga pasta, secondi, deserti un itāļu vīni.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e0c0a'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-size='40' text-anchor='middle' fill='%23c9a45c'%3EI%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="menu" class="font-sans font-light">
+
+<main>
+  <!-- ================= PAGE HERO ================= -->
+  <section class="page-hero">
+    <img src="https://images.unsplash.com/photo-1600803907087-f56d462fd26b?auto=format&fit=crop&w=2000&q=75" alt="" data-parallax="0.3">
+    <div class="inner max-w-site mx-auto w-full px-4 sm:px-8 pb-16 sm:pb-24">
+      <p class="font-script text-gold text-3xl sm:text-5xl" data-reveal="blur">La nostra cucina</p>
+      <h1 class="title-xl text-6xl sm:text-8xl lg:text-9xl mt-2" data-split data-en="Our Menu">Ēdienkarte</h1>
+      <nav class="mt-6 text-xs tracking-[0.3em] uppercase text-cream/60" data-reveal="up" data-delay="500"><a href="index.html" class="hover:text-gold" data-en="Home">Sākums</a><span class="mx-3 text-gold">/</span><span data-en="Menu">Ēdienkarte</span></nav>
+    </div>
+  </section>
+
+  <!-- ================= TABS ================= -->
+  <div class="menu-tabs-wrap sticky z-40 bg-ink/90 backdrop-blur border-y border-gold/15">
+    <div class="menu-tabs max-w-site mx-auto px-2 sm:px-8 flex md:justify-center overflow-x-auto">
+      <button class="menu-tab" data-tab="antipasti">Antipasti</button>
+      <button class="menu-tab" data-tab="pizza">Pizza</button>
+      <button class="menu-tab" data-tab="pasta">Pasta &amp; Risotto</button>
+      <button class="menu-tab" data-tab="secondi">Secondi</button>
+      <button class="menu-tab" data-tab="dolci">Dolci</button>
+      <button class="menu-tab" data-tab="vini">Vini &amp; Bevande</button>
+    </div>
+  </div>
+
+  <section class="py-20 sm:py-28">
+    <div class="max-w-site mx-auto px-4 sm:px-8">
+
+      <!-- ---------- ANTIPASTI ---------- -->
+      <div class="menu-panel" data-panel="antipasti">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-16">
+          <aside class="lg:col-span-5"><div class="lg:sticky lg:top-40">
+            <div class="frame"><div class="img-reveal aspect-[4/5]"><img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?auto=format&fit=crop&w=900&q=75" alt="Bruschetta" class="w-full h-full object-cover"></div></div>
+            <p class="font-script text-gold text-5xl mt-10">Antipasti</p>
+            <p class="text-cream/60 mt-3 leading-relaxed" data-en="Small plates to share while the wine is being poured — the Italian way to start an evening.">Uzkodas dalīšanai, kamēr tiek ieliets vīns — itāļu veids, kā sākt vakaru.</p>
+          </div></aside>
+          <div class="lg:col-span-7">
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Bruschetta al Pomodoro</h3><span class="dots"></span><span class="price-tag text-2xl">€7.50</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Toasted sourdough with vine tomatoes, basil and garlic.">Grauzdēta maize ar tomātiem, baziliku un ķiploku.</p>
+                <div class="flex gap-2 mt-2"><span class="badge text-[#9cc07f]" data-en="Vegetarian">Veģetārs</span></div></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1498579150354-977475b7ea0b?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Burrata con Pomodorini</h3><span class="dots"></span><span class="price-tag text-2xl">€12.90</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Creamy Apulian burrata with cherry tomatoes, basil oil and crostini.">Krēmīga burrata ar ķiršu tomātiem, bazilika eļļu un grauzdiņiem.</p>
+                <div class="flex gap-2 mt-2"><span class="badge text-gold" data-en="Chef's pick">Šefa izvēle</span><span class="badge text-[#9cc07f]" data-en="Vegetarian">Veģetārs</span></div></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Panzanella Toscana</h3><span class="dots"></span><span class="price-tag text-2xl">€9.50</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Tuscan bread salad with tomatoes, mozzarella, red onion and basil.">Toskānas maizes salāti ar tomātiem, mocarellu, sarkano sīpolu un baziliku.</p>
+                <div class="flex gap-2 mt-2"><span class="badge text-[#9cc07f]" data-en="Vegetarian">Veģetārs</span></div></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Insalata Mista</h3><span class="dots"></span><span class="price-tag text-2xl">€8.90</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Seasonal leaves and vegetables with olives and a lemon dressing.">Sezonas lapu salāti un dārzeņi ar olīvām un citronu mērci.</p>
+                <div class="flex gap-2 mt-2"><span class="badge text-[#9cc07f]" data-en="Vegan">Vegāns</span></div></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Carpaccio di Manzo</h3><span class="dots"></span><span class="price-tag text-2xl">€13.50</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Thinly sliced beef tenderloin, rocket, capers and Parmigiano shavings.">Plāni griezta liellopa fileja, rukola, kaperi un Parmigiano skaidiņas.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---------- PIZZA ---------- -->
+      <div class="menu-panel" data-panel="pizza">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-16">
+          <aside class="lg:col-span-5"><div class="lg:sticky lg:top-40">
+            <div class="frame"><div class="img-reveal aspect-[4/5]"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=900&q=75" alt="Pizza Margherita" class="w-full h-full object-cover"></div></div>
+            <p class="font-script text-gold text-5xl mt-10">Pizza Napoletana</p>
+            <p class="text-cream/60 mt-3 leading-relaxed" data-en="48-hour fermented dough, baked for 90 seconds in our wood-fired oven at 450 °C. Every pizza is 32 cm.">48 stundas raudzēta mīkla, 90 sekundes cepta mūsu malkas krāsnī 450 °C temperatūrā. Katras picas diametrs — 32 cm.</p>
+          </div></aside>
+          <div class="lg:col-span-7">
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Margherita</h3><span class="dots"></span><span class="price-tag text-2xl">€10.50</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="San Marzano tomatoes, fior di latte, fresh basil and extra virgin olive oil.">Sanmarcāno tomāti, fior di latte, svaigs baziliks un extra virgin olīveļļa.</p>
+                <div class="flex gap-2 mt-2"><span class="badge text-gold">Classico</span><span class="badge text-[#9cc07f]" data-en="Vegetarian">Veģetārs</span></div></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Diavola</h3><span class="dots"></span><span class="price-tag text-2xl">€13.90</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Tomato, fior di latte, spicy Calabrian salami and chilli oil.">Tomāti, fior di latte, pikants Kalabrijas salami un čili eļļa.</p>
+                <div class="flex gap-2 mt-2"><span class="badge text-[#e27c89]" data-en="Spicy">Pikants</span></div></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Rucola e Prosciutto</h3><span class="dots"></span><span class="price-tag text-2xl">€15.50</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Tomato, mozzarella, Parma ham, rocket and Parmigiano Reggiano.">Tomāti, mocarella, Parmas šķiņķis, rukola un Parmigiano Reggiano.</p></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Funghi e Tartufo</h3><span class="dots"></span><span class="price-tag text-2xl">€16.90</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Wild mushrooms, black truffle cream, mozzarella and thyme.">Meža sēnes, melno trifeļu krēms, mocarella un timiāns.</p>
+                <div class="flex gap-2 mt-2"><span class="badge text-gold" data-en="Chef's pick">Šefa izvēle</span><span class="badge text-[#9cc07f]" data-en="Vegetarian">Veģetārs</span></div></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Capricciosa</h3><span class="dots"></span><span class="price-tag text-2xl">€14.50</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Cooked ham, artichokes, mushrooms, olives and mozzarella.">Vārīts šķiņķis, artišoki, sēnes, olīvas un mocarella.</p></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Salsiccia e Cipolla</h3><span class="dots"></span><span class="price-tag text-2xl">€14.50</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Italian fennel sausage, mozzarella, caramelised onions and rosemary.">Itāļu desiņa ar fenheli, mocarella, karamelizēti sīpoli un rozmarīns.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---------- PASTA ---------- -->
+      <div class="menu-panel" data-panel="pasta">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-16">
+          <aside class="lg:col-span-5"><div class="lg:sticky lg:top-40">
+            <div class="frame"><div class="img-reveal aspect-[4/5]"><img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&w=900&q=75" alt="Spaghetti Carbonara" class="w-full h-full object-cover"></div></div>
+            <p class="font-script text-gold text-5xl mt-10">Pasta fresca</p>
+            <p class="text-cream/60 mt-3 leading-relaxed" data-en="Our pasta is made by hand every morning from Italian “00” flour and free-range eggs.">Mūsu pasta katru rītu tiek gatavota ar rokām no itāļu “00” miltiem un brīvās turēšanas olām.</p>
+          </div></aside>
+          <div class="lg:col-span-7">
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Spaghetti Carbonara</h3><span class="dots"></span><span class="price-tag text-2xl">€14.50</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Guanciale, egg yolk, Pecorino Romano and black pepper — no cream, the Roman way.">Guanciale, olas dzeltenums, Pecorino Romano un melnie pipari — bez krējuma, kā Romā.</p>
+                <div class="flex gap-2 mt-2"><span class="badge text-gold" data-en="Chef's pick">Šefa izvēle</span></div></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1579684947550-22e945225d9a?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Tagliatelle al Ragù</h3><span class="dots"></span><span class="price-tag text-2xl">€15.90</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Slow-braised beef and pork ragù, the Bolognese way, with Parmigiano.">Lēni sautēts liellopa un cūkgaļas ragù pēc Boloņas receptes ar Parmigiano.</p></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Spaghetti alle Vongole</h3><span class="dots"></span><span class="price-tag text-2xl">€18.90</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Clams, garlic, white wine, parsley and a hint of chilli.">Venēras gliemenes, ķiploks, baltvīns, pētersīļi un nedaudz čili.</p></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Linguine ai Gamberi</h3><span class="dots"></span><span class="price-tag text-2xl">€17.50</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Tiger prawns, cherry tomatoes, garlic and fresh basil.">Tīģergarneles, ķiršu tomāti, ķiploks un svaigs baziliks.</p></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Lasagna della Nonna</h3><span class="dots"></span><span class="price-tag text-2xl">€15.50</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Grandma's recipe — layers of ragù, béchamel and Parmigiano.">Vecmāmiņas recepte — ragù, bešamela mērces un Parmigiano kārtas.</p></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Fettuccine Alfredo</h3><span class="dots"></span><span class="price-tag text-2xl">€13.50</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Silky butter and aged Parmigiano Reggiano sauce.">Zīdaina sviesta un nogatavināta Parmigiano Reggiano mērce.</p>
+                <div class="flex gap-2 mt-2"><span class="badge text-[#9cc07f]" data-en="Vegetarian">Veģetārs</span></div></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Penne all'Arrabbiata</h3><span class="dots"></span><span class="price-tag text-2xl">€11.50</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Spicy tomato sauce with garlic, chilli and parsley.">Pikanta tomātu mērce ar ķiploku, čili un pētersīļiem.</p>
+                <div class="flex gap-2 mt-2"><span class="badge text-[#e27c89]" data-en="Spicy">Pikants</span><span class="badge text-[#9cc07f]" data-en="Vegan">Vegāns</span></div></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Risotto ai Porcini</h3><span class="dots"></span><span class="price-tag text-2xl">€16.90</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Carnaroli rice, porcini mushrooms, butter and Parmigiano.">Carnaroli rīsi, baravikas, sviests un Parmigiano.</p>
+                <div class="flex gap-2 mt-2"><span class="badge text-[#9cc07f]" data-en="Vegetarian">Veģetārs</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---------- SECONDI ---------- -->
+      <div class="menu-panel" data-panel="secondi">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-16">
+          <aside class="lg:col-span-5"><div class="lg:sticky lg:top-40">
+            <div class="frame"><div class="img-reveal aspect-[4/5]"><img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=900&q=75" alt="Tagliata di manzo" class="w-full h-full object-cover"></div></div>
+            <p class="font-script text-gold text-5xl mt-10">Secondi piatti</p>
+            <p class="text-cream/60 mt-3 leading-relaxed" data-en="Meat and fish main courses, cooked over open flame and served with seasonal sides.">Gaļas un zivju pamatēdieni, gatavoti uz atklātas uguns un pasniegti ar sezonas piedevām.</p>
+          </div></aside>
+          <div class="lg:col-span-7">
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Tagliata di Manzo</h3><span class="dots"></span><span class="price-tag text-2xl">€26.50</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Grilled sliced sirloin with rocket, Parmigiano and aged balsamic.">Grilēts, šķēlēs griezts liellopa steiks ar rukolu, Parmigiano un balzamiko.</p>
+                <div class="flex gap-2 mt-2"><span class="badge text-gold" data-en="Chef's pick">Šefa izvēle</span></div></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1432139509613-5c4255815697?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Filetto al Pepe Verde</h3><span class="dots"></span><span class="price-tag text-2xl">€29.90</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Beef fillet in a green peppercorn sauce with grilled broccolini.">Liellopa fileja zaļo piparu mērcē ar grilētiem brokoļiem.</p></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Bistecca con Patate</h3><span class="dots"></span><span class="price-tag text-2xl">€24.50</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Ribeye steak with rosemary fries and salsa verde.">Ribeye steiks ar rozmarīna kartupeļiem un salsa verde.</p></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Costine al Forno</h3><span class="dots"></span><span class="price-tag text-2xl">€21.90</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Slow-roasted pork ribs with a honey and balsamic glaze.">Lēni ceptas cūkgaļas ribiņas ar medus un balzamiko glazūru.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---------- DOLCI ---------- -->
+      <div class="menu-panel" data-panel="dolci">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-16">
+          <aside class="lg:col-span-5"><div class="lg:sticky lg:top-40">
+            <div class="frame"><div class="img-reveal aspect-[4/5]"><img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=900&q=75" alt="Tiramisù" class="w-full h-full object-cover"></div></div>
+            <p class="font-script text-gold text-5xl mt-10">Dolci</p>
+            <p class="text-cream/60 mt-3 leading-relaxed" data-en="A sweet ending — all our desserts are made in-house every day.">Saldas beigas — visus desertus gatavojam paši, katru dienu.</p>
+          </div></aside>
+          <div class="lg:col-span-7">
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Tiramisù della Casa</h3><span class="dots"></span><span class="price-tag text-2xl">€7.50</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Mascarpone cream, espresso-soaked savoiardi and cocoa.">Maskarpones krēms, espresso piesūcināti savoiardi cepumi un kakao.</p>
+                <div class="flex gap-2 mt-2"><span class="badge text-gold" data-en="Chef's pick">Šefa izvēle</span></div></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Panna Cotta alla Fragola</h3><span class="dots"></span><span class="price-tag text-2xl">€6.90</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Vanilla panna cotta with fresh strawberries.">Vaniļas panna cotta ar svaigām zemenēm.</p></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Affogato al Caffè</h3><span class="dots"></span><span class="price-tag text-2xl">€5.50</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Vanilla gelato drowned in a shot of hot espresso.">Vaniļas gelato, pārliets ar karstu espresso.</p></div>
+            </div>
+            <div class="menu-item no-thumb" data-reveal="up">
+              <div><div class="line"><h3 class="name">Gelato Artigianale</h3><span class="dots"></span><span class="price-tag text-2xl">€4.90</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Three scoops of house-made gelato — ask for today's flavours.">Trīs bumbiņas mājās gatavota gelato — jautājiet par šodienas garšām.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---------- VINI ---------- -->
+      <div class="menu-panel" data-panel="vini">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-16">
+          <aside class="lg:col-span-5"><div class="lg:sticky lg:top-40">
+            <div class="frame"><div class="img-reveal aspect-[4/5]"><img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=900&q=75" alt="Italian wine" class="w-full h-full object-cover"></div></div>
+            <p class="font-script text-gold text-5xl mt-10">Vini &amp; Bevande</p>
+            <p class="text-cream/60 mt-3 leading-relaxed" data-en="A selection from our 250-label cellar. Ask our sommelier for the full wine list.">Izlase no mūsu 250 vīnu pagraba. Pilnu vīnu karti jautājiet mūsu someljē.</p>
+          </div></aside>
+          <div class="lg:col-span-7">
+            <div class="flex justify-end gap-8 text-[0.65rem] tracking-[0.25em] uppercase text-cream/50 pb-2"><span data-en="Glass">Glāze</span><span data-en="Bottle">Pudele</span></div>
+            <div class="menu-item no-thumb" data-reveal="up">
+              <div><div class="line"><h3 class="name">Chianti Classico DOCG</h3><span class="dots"></span><span class="price-tag text-xl">€8 · €38</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Tuscany · Sangiovese · cherry, violet, spice">Toskāna · Sangiovese · ķirši, vijolītes, garšvielas</p></div>
+            </div>
+            <div class="menu-item no-thumb" data-reveal="up">
+              <div><div class="line"><h3 class="name">Barolo DOCG</h3><span class="dots"></span><span class="price-tag text-xl">€14 · €72</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Piedmont · Nebbiolo · rose, tar, dried fruit">Pjemonta · Nebbiolo · roze, darva, žāvēti augļi</p></div>
+            </div>
+            <div class="menu-item no-thumb" data-reveal="up">
+              <div><div class="line"><h3 class="name">Primitivo di Manduria</h3><span class="dots"></span><span class="price-tag text-xl">€8 · €36</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Puglia · Primitivo · plum, chocolate, velvet">Apūlija · Primitivo · plūmes, šokolāde, samtainums</p></div>
+            </div>
+            <div class="menu-item no-thumb" data-reveal="up">
+              <div><div class="line"><h3 class="name">Pinot Grigio delle Venezie</h3><span class="dots"></span><span class="price-tag text-xl">€7 · €32</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Veneto · Pinot Grigio · pear, citrus, crisp">Veneto · Pinot Grigio · bumbieris, citrusi, svaigums</p></div>
+            </div>
+            <div class="menu-item no-thumb" data-reveal="up">
+              <div><div class="line"><h3 class="name">Prosecco Superiore DOCG</h3><span class="dots"></span><span class="price-tag text-xl">€7 · €34</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Valdobbiadene · Glera · green apple, acacia">Valdobiadene · Glera · zaļais ābols, akācija</p></div>
+            </div>
+            <div class="menu-item mt-6" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1560512823-829485b8bf24?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Aperol Spritz</h3><span class="dots"></span><span class="price-tag text-2xl">€8.50</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Aperol, Prosecco, soda and orange — the Italian aperitivo.">Aperol, Prosecco, soda un apelsīns — itāļu aperitīvs.</p></div>
+            </div>
+            <div class="menu-item" data-reveal="up">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=200&h=200&q=70" alt="" loading="lazy"></div>
+              <div><div class="line"><h3 class="name">Espresso · Cappuccino</h3><span class="dots"></span><span class="price-tag text-2xl">€2.50 · €3.50</span></div>
+                <p class="text-sm text-cream/60 mt-1" data-en="Freshly roasted Italian beans from a small roastery in Naples.">Svaigi grauzētas itāļu kafijas pupiņas no nelielas Neapoles grauzdētavas.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="mt-16 text-center text-sm text-cream/50" data-reveal="up" data-en="Please let our staff know about any allergies. Prices include VAT.">Lūdzu, informējiet mūsu personālu par alerģijām. Cenās iekļauts PVN.</p>
+    </div>
+  </section>
+
+  <!-- ================= TASTING MENU ================= -->
+  <section class="relative py-28 sm:py-40 overflow-hidden overlay-dark">
+    <div class="parallax-bg" data-parallax="0.2" style="background-image:url('https://images.unsplash.com/photo-1533777324565-a040eb52facd?auto=format&fit=crop&w=2000&q=70')"></div>
+    <div class="relative z-10 max-w-3xl mx-auto px-4 sm:px-8 text-center">
+      <span class="eyebrow both" data-reveal="zoom" data-en="Every Friday & Saturday">Katru piektdienu un sestdienu</span>
+      <h2 class="title-xl text-5xl sm:text-7xl mt-6" data-reveal="up" data-en="Chef's <em class='text-gold'>tasting</em> menu">Šefpavāra <em class="text-gold">degustācijas</em> ēdienkarte</h2>
+      <p class="mt-6 text-cream/75 text-lg" data-reveal="up" data-delay="120" data-en="Five courses that change with the season, with optional wine pairing chosen by our sommelier.">Pieci ēdieni, kas mainās līdz ar sezonu, ar iespēju izvēlēties someljē piemeklētu vīnu.</p>
+      <div class="mt-10 flex flex-wrap justify-center gap-10" data-reveal="up" data-delay="240">
+        <div><p class="font-display text-6xl text-gold">€65</p><p class="text-xs tracking-[0.3em] uppercase text-cream/60 mt-2" data-en="5 courses">5 ēdieni</p></div>
+        <div class="w-px bg-gold/30"></div>
+        <div><p class="font-display text-6xl text-gold">€95</p><p class="text-xs tracking-[0.3em] uppercase text-cream/60 mt-2" data-en="With wine pairing">Ar vīna saskaņu</p></div>
+      </div>
+      <a href="reservations.html" class="btn btn-solid mt-12" data-reveal="up" data-delay="360"><span data-en="Reserve the experience">Rezervēt pieredzi</span> <span class="arrow">→</span></a>
+    </div>
+  </section>
+</main>
+
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-en="Reservations — Italissimo">Rezervācija — Italissimo</title>
+  <meta name="description" content="Rezervējiet galdiņu Italissimo restorānā Rīgā tiešsaistē.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e0c0a'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-size='40' text-anchor='middle' fill='%23c9a45c'%3EI%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="reservations" class="font-sans font-light">
+
+<main>
+  <!-- ================= PAGE HERO ================= -->
+  <section class="page-hero">
+    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2000&q=75" alt="" data-parallax="0.3">
+    <div class="inner max-w-site mx-auto w-full px-4 sm:px-8 pb-16 sm:pb-24">
+      <p class="font-script text-gold text-3xl sm:text-5xl" data-reveal="blur">Prenota un tavolo</p>
+      <h1 class="title-xl text-6xl sm:text-8xl lg:text-9xl mt-2" data-split data-en="Reservations">Rezervācija</h1>
+      <nav class="mt-6 text-xs tracking-[0.3em] uppercase text-cream/60" data-reveal="up" data-delay="500"><a href="index.html" class="hover:text-gold" data-en="Home">Sākums</a><span class="mx-3 text-gold">/</span><span data-en="Reservations">Rezervācija</span></nav>
+    </div>
+  </section>
+
+  <!-- ================= BOOKING ================= -->
+  <section class="py-20 sm:py-28">
+    <div class="max-w-site mx-auto px-4 sm:px-8 grid lg:grid-cols-12 gap-14 lg:gap-20">
+
+      <!-- Form -->
+      <div class="lg:col-span-7">
+        <span class="eyebrow" data-reveal="left" data-en="Online booking">Tiešsaistes rezervācija</span>
+        <h2 class="title-xl text-5xl sm:text-6xl mt-6" data-reveal="up" data-en="Book your <em class='text-gold'>table</em>">Rezervējiet <em class="text-gold">galdiņu</em></h2>
+        <p class="text-cream/60 mt-5 max-w-xl" data-reveal="up" data-delay="100" data-en="Choose a date, time and number of guests. We'll confirm your reservation by phone or e-mail.">Izvēlieties datumu, laiku un viesu skaitu. Rezervāciju apstiprināsim pa tālruni vai e-pastu.</p>
+
+        <form id="reservation-form" class="mt-12 space-y-10" novalidate data-reveal="up" data-delay="200">
+          <!-- Step 1 -->
+          <div>
+            <p class="text-xs tracking-[0.3em] uppercase text-gold mb-6"><span class="font-display text-2xl mr-2">01</span> <span data-en="When &amp; how many">Kad un cik</span></p>
+            <div class="grid sm:grid-cols-2 gap-8 items-end">
+              <div class="field">
+                <input type="date" id="r-date" data-required>
+                <label for="r-date" data-en="Date">Datums</label>
+                <span class="bar"></span>
+                <p class="err" data-en="Please choose a date">Lūdzu, izvēlieties datumu</p>
+              </div>
+              <div>
+                <p class="text-[0.68rem] tracking-[0.2em] uppercase text-gold mb-3" data-en="Guests">Viesi</p>
+                <div class="guest-picker flex items-center gap-5">
+                  <button type="button" id="g-minus" aria-label="Fewer guests">−</button>
+                  <span id="guests-out" class="font-display text-4xl w-10 text-center">2</span>
+                  <button type="button" id="g-plus" aria-label="More guests">+</button>
+                  <input type="hidden" id="r-guests" value="2">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="field">
+            <p class="text-xs tracking-[0.3em] uppercase text-gold mb-6"><span class="font-display text-2xl mr-2">02</span> <span data-en="Choose a time">Izvēlieties laiku</span></p>
+            <p class="text-sm text-cream/50 mb-3" data-en="Lunch">Pusdienas</p>
+            <div class="flex flex-wrap gap-2">
+              <button type="button" class="time-chip">12:00</button><button type="button" class="time-chip">12:30</button><button type="button" class="time-chip">13:00</button><button type="button" class="time-chip">13:30</button><button type="button" class="time-chip">14:00</button><button type="button" class="time-chip">14:30</button>
+            </div>
+            <p class="text-sm text-cream/50 mb-3 mt-6" data-en="Dinner">Vakariņas</p>
+            <div class="flex flex-wrap gap-2">
+              <button type="button" class="time-chip">18:00</button><button type="button" class="time-chip">18:30</button><button type="button" class="time-chip">19:00</button><button type="button" class="time-chip">19:30</button><button type="button" class="time-chip">20:00</button><button type="button" class="time-chip">20:30</button><button type="button" class="time-chip">21:00</button>
+            </div>
+            <input type="hidden" id="r-time" data-required>
+            <p class="err" data-en="Please choose a time">Lūdzu, izvēlieties laiku</p>
+          </div>
+
+          <!-- Step 3 -->
+          <div>
+            <p class="text-xs tracking-[0.3em] uppercase text-gold mb-6"><span class="font-display text-2xl mr-2">03</span> <span data-en="Your details">Jūsu dati</span></p>
+            <div class="grid sm:grid-cols-2 gap-8">
+              <div class="field sm:col-span-2">
+                <input type="text" id="r-name" placeholder=" " autocomplete="name" data-required>
+                <label for="r-name" data-en="Full name">Vārds, uzvārds</label>
+                <span class="bar"></span>
+                <p class="err" data-en="Please enter your name">Lūdzu, ievadiet savu vārdu</p>
+              </div>
+              <div class="field">
+                <input type="tel" id="r-phone" placeholder=" " autocomplete="tel" data-required>
+                <label for="r-phone" data-en="Phone">Tālrunis</label>
+                <span class="bar"></span>
+                <p class="err" data-en="Please enter a valid phone number">Lūdzu, ievadiet derīgu tālruņa numuru</p>
+              </div>
+              <div class="field">
+                <input type="email" id="r-email" placeholder=" " autocomplete="email" data-required>
+                <label for="r-email" data-en="E-mail">E-pasts</label>
+                <span class="bar"></span>
+                <p class="err" data-en="Please enter a valid e-mail">Lūdzu, ievadiet derīgu e-pastu</p>
+              </div>
+              <div class="field sm:col-span-2">
+                <select id="r-occasion">
+                  <option value="" data-en="No special occasion">Bez īpaša iemesla</option>
+                  <option data-en="Birthday">Dzimšanas diena</option>
+                  <option data-en="Anniversary">Gadadiena</option>
+                  <option data-en="Romantic dinner">Romantiskas vakariņas</option>
+                  <option data-en="Business meal">Darījumu vakariņas</option>
+                </select>
+                <label for="r-occasion" data-en="Occasion">Iemesls</label>
+                <svg class="chev" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m6 9 6 6 6-6"/></svg>
+                <span class="bar"></span>
+              </div>
+              <div class="field sm:col-span-2">
+                <textarea id="r-notes" rows="3" placeholder=" " class="resize-none"></textarea>
+                <label for="r-notes" data-en="Special requests (allergies, high chair, window seat…)">Īpaši lūgumi (alerģijas, bērnu krēsls, galdiņš pie loga…)</label>
+                <span class="bar"></span>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-solid w-full sm:w-auto" data-magnetic><span data-en="Confirm reservation">Apstiprināt rezervāciju</span> <span class="arrow">→</span></button>
+        </form>
+      </div>
+
+      <!-- Info -->
+      <aside class="lg:col-span-5">
+        <div class="lg:sticky lg:top-28 space-y-6">
+          <div class="relative overflow-hidden" data-reveal="right">
+            <div class="img-reveal aspect-[16/10]"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=75" alt="Table setting" class="w-full h-full object-cover"></div>
+          </div>
+          <div class="bg-espresso border border-gold/15 p-8 sm:p-10" data-reveal="right" data-delay="100">
+            <h3 class="font-display text-3xl" data-en="Opening hours">Darba laiks</h3>
+            <ul class="mt-6 space-y-3 text-cream/70">
+              <li class="flex justify-between border-b border-cream/10 pb-3"><span data-en="Monday – Thursday">Pirmdiena – ceturtdiena</span><span class="text-cream">12:00 – 22:00</span></li>
+              <li class="flex justify-between border-b border-cream/10 pb-3"><span data-en="Friday – Saturday">Piektdiena – sestdiena</span><span class="text-cream">12:00 – 23:30</span></li>
+              <li class="flex justify-between"><span data-en="Sunday">Svētdiena</span><span class="text-cream">12:00 – 21:00</span></li>
+            </ul>
+            <div class="mt-8 pt-8 border-t border-gold/15">
+              <p class="text-sm text-cream/60" data-en="Prefer to call?">Vēlaties zvanīt?</p>
+              <a href="tel:+37120000000" class="font-display text-4xl text-gold hover:text-cream transition">+371 2000 0000</a>
+            </div>
+          </div>
+          <div class="bg-wine p-8 sm:p-10 relative overflow-hidden group" data-reveal="right" data-delay="200">
+            <div class="absolute -right-10 -bottom-10 w-40 h-40 rounded-full border border-cream/20 transition duration-700 group-hover:scale-125" aria-hidden="true"></div>
+            <h3 class="font-display text-3xl" data-en="Groups &amp; private events">Grupas un privāti pasākumi</h3>
+            <p class="mt-3 text-cream/80" data-en="For 9+ guests or to book our Sala Privata (up to 40 guests), please get in touch directly.">Grupām no 9 viesiem vai lai rezervētu mūsu Sala Privata (līdz 40 viesiem), lūdzu, sazinieties ar mums tieši.</p>
+            <a href="contact.html" class="inline-flex items-center gap-2 mt-6 text-xs tracking-[0.25em] uppercase link-underline"><span data-en="Contact us">Sazināties</span> →</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="pb-24 sm:pb-36">
+    <div class="max-w-3xl mx-auto px-4 sm:px-8">
+      <div class="text-center mb-12">
+        <span class="eyebrow both" data-reveal="zoom" data-en="Good to know">Noderīgi zināt</span>
+        <h2 class="title-xl text-5xl sm:text-6xl mt-6" data-reveal="up" data-en="Frequently asked <em class='text-gold'>questions</em>">Biežāk uzdotie <em class="text-gold">jautājumi</em></h2>
+      </div>
+      <div class="faq divide-y divide-gold/15 border-y border-gold/15">
+        <details class="group py-6" data-reveal="up">
+          <summary class="flex justify-between items-center cursor-pointer list-none font-display text-2xl"><span data-en="Can I cancel or change my booking?">Vai varu atcelt vai mainīt rezervāciju?</span><span class="faq-icon text-gold text-3xl transition duration-500 group-open:rotate-45">+</span></summary>
+          <p class="mt-4 text-cream/65 leading-relaxed" data-en="Of course — just call us or reply to your confirmation e-mail at least 3 hours before your reservation.">Protams — vienkārši piezvaniet vai atbildiet uz apstiprinājuma e-pastu vismaz 3 stundas pirms rezervācijas laika.</p>
+        </details>
+        <details class="group py-6" data-reveal="up">
+          <summary class="flex justify-between items-center cursor-pointer list-none font-display text-2xl"><span data-en="Do you have vegetarian and gluten-free options?">Vai jums ir veģetāri un bezglutēna ēdieni?</span><span class="faq-icon text-gold text-3xl transition duration-500 group-open:rotate-45">+</span></summary>
+          <p class="mt-4 text-cream/65 leading-relaxed" data-en="Yes. Many of our dishes are vegetarian or vegan, and we offer gluten-free pasta and pizza dough on request.">Jā. Daudzi mūsu ēdieni ir veģetāri vai vegāniski, un pēc pieprasījuma piedāvājam bezglutēna pastu un picas mīklu.</p>
+        </details>
+        <details class="group py-6" data-reveal="up">
+          <summary class="flex justify-between items-center cursor-pointer list-none font-display text-2xl"><span data-en="Are children welcome?">Vai bērni ir gaidīti?</span><span class="faq-icon text-gold text-3xl transition duration-500 group-open:rotate-45">+</span></summary>
+          <p class="mt-4 text-cream/65 leading-relaxed" data-en="Always! We have high chairs and a small bambini menu — just mention it in your special requests.">Vienmēr! Mums ir bērnu krēsli un neliela bambini ēdienkarte — vienkārši norādiet to īpašajos lūgumos.</p>
+        </details>
+        <details class="group py-6" data-reveal="up">
+          <summary class="flex justify-between items-center cursor-pointer list-none font-display text-2xl"><span data-en="Is there parking nearby?">Vai tuvumā ir autostāvvieta?</span><span class="faq-icon text-gold text-3xl transition duration-500 group-open:rotate-45">+</span></summary>
+          <p class="mt-4 text-cream/65 leading-relaxed" data-en="Street parking is available on Tērbatas iela and there is a public car park two minutes' walk away.">Ielas stāvvietas pieejamas Tērbatas ielā, un divu minūšu gājienā atrodas publisks autostāvlaukums.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Success modal -->
+<div id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="box bg-espresso border border-gold/30 max-w-md w-full p-8 sm:p-12 text-center relative">
+    <button data-close-modal class="absolute top-4 right-5 text-cream/50 hover:text-gold text-xl" aria-label="Close">✕</button>
+    <svg class="check-svg mx-auto" width="84" height="84" viewBox="0 0 52 52"><circle cx="26" cy="26" r="25" fill="none" stroke="#c9a45c" stroke-width="1.2"/><path fill="none" stroke="#c9a45c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 27l7 7 15-15"/></svg>
+    <h3 id="modal-title" class="font-display text-4xl mt-6">Grazie mille!</h3>
+    <p id="modal-body" class="text-cream/75 mt-4 leading-relaxed"></p>
+    <button data-close-modal class="btn btn-solid mt-8"><span data-en="Close">Aizvērt</span></button>
+  </div>
+</div>
+
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

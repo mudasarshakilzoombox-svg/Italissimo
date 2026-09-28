@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-en="Gallery — Italissimo">Galerija — Italissimo</title>
+  <meta name="description" content="Italissimo galerija — ēdieni, interjers, vīni un mirkļi no mūsu restorāna Rīgā.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e0c0a'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-size='40' text-anchor='middle' fill='%23c9a45c'%3EI%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="gallery" class="font-sans font-light">
+
+<main>
+  <!-- ================= PAGE HERO ================= -->
+  <section class="page-hero">
+    <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=2000&q=75" alt="" data-parallax="0.3">
+    <div class="inner max-w-site mx-auto w-full px-4 sm:px-8 pb-16 sm:pb-24">
+      <p class="font-script text-gold text-3xl sm:text-5xl" data-reveal="blur">Momenti italiani</p>
+      <h1 class="title-xl text-6xl sm:text-8xl lg:text-9xl mt-2" data-split data-en="Gallery">Galerija</h1>
+      <nav class="mt-6 text-xs tracking-[0.3em] uppercase text-cream/60" data-reveal="up" data-delay="500"><a href="index.html" class="hover:text-gold" data-en="Home">Sākums</a><span class="mx-3 text-gold">/</span><span data-en="Gallery">Galerija</span></nav>
+    </div>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section class="py-20 sm:py-28">
+    <div class="max-w-site mx-auto px-4 sm:px-8">
+      <div class="flex flex-wrap justify-center gap-3 mb-14" data-reveal="up">
+        <button class="filter-btn active" data-filter="all" data-en="All">Visi</button>
+        <button class="filter-btn" data-filter="food" data-en="Food">Ēdieni</button>
+        <button class="filter-btn" data-filter="interior" data-en="Interior">Interjers</button>
+        <button class="filter-btn" data-filter="drinks" data-en="Wine &amp; drinks">Vīns un dzērieni</button>
+        <button class="filter-btn" data-filter="people" data-en="Moments">Mirkļi</button>
+      </div>
+
+      <div class="masonry">
+        <figure class="g-item" data-cat="food" data-reveal="up" data-delay="0">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&h=1000&q=75" data-full="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1800&q=80" alt="Pizza della casa" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl">Pizza della casa</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="interior" data-reveal="up" data-delay="100">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&h=600&q=75" data-full="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1800&q=80" alt="The dining room" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl" data-en="The dining room">Vakariņu zāle</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="food" data-reveal="up" data-delay="200">
+          <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&w=800&h=800&q=75" data-full="https://images.unsplash.com/photo-1612874742237-6526221588e3?auto=format&fit=crop&w=1800&q=80" alt="Spaghetti Carbonara" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl">Spaghetti Carbonara</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="drinks" data-reveal="up" data-delay="0">
+          <img src="https://images.unsplash.com/photo-1560512823-829485b8bf24?auto=format&fit=crop&w=800&h=1100&q=75" data-full="https://images.unsplash.com/photo-1560512823-829485b8bf24?auto=format&fit=crop&w=1800&q=80" alt="Aperol Spritz" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl">Aperol Spritz</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="people" data-reveal="up" data-delay="100">
+          <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=800&h=620&q=75" data-full="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1800&q=80" alt="An evening with friends" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl" data-en="An evening with friends">Vakars ar draugiem</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="food" data-reveal="up" data-delay="200">
+          <img src="https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=800&h=800&q=75" data-full="https://images.unsplash.com/photo-1595295333158-4742f28fbd85?auto=format&fit=crop&w=1800&q=80" alt="Spaghetti alle Vongole" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl">Spaghetti alle Vongole</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="interior" data-reveal="up" data-delay="0">
+          <img src="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?auto=format&fit=crop&w=800&h=1050&q=75" data-full="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?auto=format&fit=crop&w=1800&q=80" alt="The green room" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl" data-en="The green room">Zaļā zāle</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="food" data-reveal="up" data-delay="100">
+          <img src="https://images.unsplash.com/photo-1579684947550-22e945225d9a?auto=format&fit=crop&w=800&h=620&q=75" data-full="https://images.unsplash.com/photo-1579684947550-22e945225d9a?auto=format&fit=crop&w=1800&q=80" alt="Tagliatelle al Ragù" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl">Tagliatelle al Ragù</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="drinks" data-reveal="up" data-delay="200">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&h=900&q=75" data-full="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1800&q=80" alt="Salute!" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl">Salute!</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="food" data-reveal="up" data-delay="0">
+          <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&h=1000&q=75" data-full="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=1800&q=80" alt="Tiramisù della Casa" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl">Tiramisù della Casa</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="people" data-reveal="up" data-delay="100">
+          <img src="https://images.unsplash.com/photo-1600628421055-4d30de868b8f?auto=format&fit=crop&w=800&h=1050&q=75" data-full="https://images.unsplash.com/photo-1600628421055-4d30de868b8f?auto=format&fit=crop&w=1800&q=80" alt="Pizza for sharing" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl" data-en="Pizza for sharing">Pica dalīšanai</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="interior" data-reveal="up" data-delay="200">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&h=620&q=75" data-full="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=80" alt="Evening light" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl" data-en="Evening light">Vakara gaisma</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="food" data-reveal="up" data-delay="0">
+          <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=800&h=800&q=75" data-full="https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=1800&q=80" alt="Risotto ai Porcini" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl">Risotto ai Porcini</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="drinks" data-reveal="up" data-delay="100">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&h=800&q=75" data-full="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1800&q=80" alt="Cappuccino" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl">Cappuccino</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="food" data-reveal="up" data-delay="200">
+          <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=800&h=620&q=75" data-full="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1800&q=80" alt="Tagliata di Manzo" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl">Tagliata di Manzo</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="interior" data-reveal="up" data-delay="0">
+          <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?auto=format&fit=crop&w=800&h=900&q=75" data-full="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?auto=format&fit=crop&w=1800&q=80" alt="The bar" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl" data-en="The bar">Bārs</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="people" data-reveal="up" data-delay="100">
+          <img src="https://images.unsplash.com/photo-1592861956120-e524fc739696?auto=format&fit=crop&w=800&h=800&q=75" data-full="https://images.unsplash.com/photo-1592861956120-e524fc739696?auto=format&fit=crop&w=1800&q=80" alt="Buon appetito!" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl">Buon appetito!</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="food" data-reveal="up" data-delay="200">
+          <img src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?auto=format&fit=crop&w=800&h=1000&q=75" data-full="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?auto=format&fit=crop&w=1800&q=80" alt="Rucola e Prosciutto" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl">Rucola e Prosciutto</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="interior" data-reveal="up" data-delay="0">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&h=620&q=75" data-full="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1800&q=80" alt="Trattoria" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl">Trattoria</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="drinks" data-reveal="up" data-delay="100">
+          <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=800&h=800&q=75" data-full="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=1800&q=80" alt="Espresso" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl">Espresso</span></figcaption>
+        </figure>
+        <figure class="g-item" data-cat="food" data-reveal="up" data-delay="200">
+          <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&h=900&q=75" data-full="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1800&q=80" alt="Margherita" loading="lazy">
+          <figcaption class="cap"><span class="font-display text-2xl">Margherita</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INSTAGRAM CTA ================= -->
+  <section class="pb-24 sm:pb-32 px-4">
+    <div class="max-w-4xl mx-auto text-center border border-gold/20 px-6 py-16 sm:py-20 relative overflow-hidden" data-reveal="zoom">
+      <div class="absolute -top-16 -right-16 w-48 h-48 rounded-full bg-wine/30 blur-3xl" aria-hidden="true"></div>
+      <div class="absolute -bottom-16 -left-16 w-48 h-48 rounded-full bg-gold/20 blur-3xl" aria-hidden="true"></div>
+      <span class="eyebrow both" data-en="Share your moment">Dalieties ar savu mirkli</span>
+      <h2 class="title-xl text-4xl sm:text-6xl mt-6">#ItalissimoRiga</h2>
+      <p class="text-cream/65 mt-5 max-w-xl mx-auto" data-en="Tag your photos with #ItalissimoRiga — every month we treat one guest to dinner for two.">Atzīmējiet savas fotogrāfijas ar #ItalissimoRiga — katru mēnesi vienu viesi cienājam ar vakariņām divatā.</p>
+      <a href="#" class="btn btn-solid mt-10" data-magnetic><span data-en="Follow on Instagram">Sekot Instagram</span> <span class="arrow">→</span></a>
+    </div>
+  </section>
+</main>
+
+<!-- Lightbox -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="">
+  <button id="lb-close" class="lb-btn top-5 right-5" aria-label="Close">✕</button>
+  <button id="lb-prev" class="lb-btn left-3 sm:left-8 top-1/2 -translate-y-1/2" aria-label="Previous">←</button>
+  <button id="lb-next" class="lb-btn right-3 sm:right-8 top-1/2 -translate-y-1/2" aria-label="Next">→</button>
+  <div class="absolute bottom-6 inset-x-0 text-center">
+    <p id="lb-caption" class="font-display text-2xl"></p>
+    <p id="lb-count" class="text-xs tracking-[0.3em] text-gold mt-1"></p>
+  </div>
+</div>
+
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
